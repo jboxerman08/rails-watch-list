@@ -1,6 +1,5 @@
-<%= simple_form_for @bookmark do |f| %>
-  <%= f.input :name %>
-  <%= f.association :company %>
-  <%= f.association :roles %>
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment %>
+  <%= f.association :movie %>
   <%= f.button :submit %>
 <% end %>
