@@ -1,9 +1,16 @@
-<h1>Lists</h1>
+<div class="container">
+  <div class="d-flex align-items-center justify-content-center">
+    <h1>WatchFlix</h1>
+  </div>
+  <div class="d-flex align-items-center justify-content-center">
+    <p><%= link_to "Create Your Watch List", new_list_path, class: 'btn btn-primary' %></p>
+  </div>
+</div>
 
-<%= link_to "Create a new list", new_list_path %>
-
-<ul>
-  <% @lists.each do |list| %>
-  <li><%= link_to list.name, list_path(list) %></li>
-  <% end %>
-</ul>
+<div class="card">
+  <ul>
+    <% @lists.each do |list| %>
+    <li><%= link_to list.name, list_path(list) %></li>
+    <% end %>
+  </ul>
+</div>
