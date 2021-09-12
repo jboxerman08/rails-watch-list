@@ -4,6 +4,7 @@
   <% @list.bookmarks.each do |bookmark| %>
     <li><%= bookmark.movie.title %> - <%= bookmark.comment %></li>
     <%= image_tag bookmark.movie.poster_url %>
+    <%= link_to 'Remove this bookmark', bookmark_path(bookmark), data: { confirm: "Are you sure?" }, :method => :delete %>
   <% end %>
 </ul>
 
