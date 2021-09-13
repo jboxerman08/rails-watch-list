@@ -7,10 +7,19 @@
   </div>
 </div>
 
-<div class="card">
-  <ul>
-    <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
-    <% end %>
-  </ul>
+<div class="col mb-4">
+  <% @lists.each do |list| %>
+    <div class="card col-12 colsm-6 col-md-4 mb-3">
+      <h5 class="card-title text-center"><%= link_to list.name, list_path(list) %></h5>
+    </div>
+  <% end %>
+</div>
+
+<div class="col mb-4">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+    </div>
+  </div>
 </div>
