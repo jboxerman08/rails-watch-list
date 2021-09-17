@@ -11,24 +11,3 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-
-body{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-// footer styling
-
-.footer {
-  text-align: center;
-  padding: 24px;
-  background-color: white;
-  margin-top: auto;
-}
-
-.footer a {
-  font-size: 30px;
-  color: #66DE93;
-  padding: 4px;
-}
