@@ -1,28 +1,34 @@
 // Specific CSS for your home-page
 
-.card {
-  position: relative;
-  display: inline-grid;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: 8px;
-  margin: 16px;
+.card-columns .card {
+  display: flex;
   width: 100%;
-  height: 150px;
-  justify-content: center;
-  align-items: center;
-}
-
-.list-title h3 {
-  margin-top: 24px;
-}
-
-.card-columns {
-  column-count: 2;
+  box-sizing: content-box;
 }
 
 .card-columns {
   @include media-breakpoint-down(sm) {
     column-count: 1;
   }
+  column-count: 2;
+  column-gap: 2.0rem;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 8px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title{
+  text-align: center;
+  padding: 0px 12px;
+}
+
+.list-title h3 {
+  margin: 16px 0px;
 }
