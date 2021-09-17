@@ -1,6 +1,7 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('http://images.unsplash.com/photo-1485095329183-d0797cdc5676?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2900&q=80')";>
   <div class="container banner-title">
     <h1>MovieList</h1>
+    <h4>Create now, watch later</h4>
   </div>
 </div>
 
@@ -9,10 +10,10 @@
 </div>
 
 <div class="container">
-  <div class="cards">
+  <div class="card-columns">
     <% @lists.each do |list| %>
-      <div class="card collg-12 colsm-6 col-md-4 mb-3">
-        <h5 class="card-title text-center"><%= link_to list.name, list_path(list) %></h5>
+      <div class="card">
+        <p class="card-title"><%= link_to list.name, list_path(list) %></p>
       </div>
     <% end %>
   </div>

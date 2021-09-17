@@ -12,3 +12,17 @@
   justify-content: center;
   align-items: center;
 }
+
+.list-title h3 {
+  margin-top: 24px;
+}
+
+.card-columns {
+  column-count: 2;
+}
+
+.card-columns {
+  @include media-breakpoint-down(sm) {
+    column-count: 1;
+  }
+}
