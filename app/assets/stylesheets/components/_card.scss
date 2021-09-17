@@ -1,0 +1,26 @@
+.card-columns .card {
+  display: flex;
+  width: 100%;
+  box-sizing: content-box;
+}
+.card-columns {
+  @include media-breakpoint-down(sm) {
+    column-count: 1;
+  }
+  column-count: 2;
+  column-gap: 2.0rem;
+  margin-bottom: 24px;
+}
+.card {
+  position: relative;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 8px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.card-title{
+  text-align: center;
+  padding: 0px 12px;
+}
