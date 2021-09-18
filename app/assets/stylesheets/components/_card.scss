@@ -2,7 +2,9 @@
   display: inline-grid;
   width: 100%;
   box-sizing: content-box;
+  margin-bottom: 1rem;
 }
+
 .card-columns {
   @include media-breakpoint-down(sm) {
     column-count: 1;

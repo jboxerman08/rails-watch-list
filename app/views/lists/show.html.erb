@@ -7,6 +7,7 @@
   <div class="rows">
     <div class="card-columns">
       <% @list.bookmarks.each do |bookmark| %>
+      <div class="card">
         <div class="card-bookmark">
           <%= image_tag bookmark.movie.poster_url %>
           <div class="card-bookmark-infos">
@@ -15,6 +16,7 @@
             <%= link_to 'Remove this bookmark', bookmark_path(bookmark), data: { confirm: "Are you sure?" }, :method => :delete %>
           </div>
         </div>
+      </div>
       <% end %>
     </div>
   </div>
