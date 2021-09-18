@@ -1,0 +1,23 @@
+.card-bookmark {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 8px;
+  height: 200px;
+}
+
+.card-bookmark img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-bookmark-infos {
+  display: inline;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+}
