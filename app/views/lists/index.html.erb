@@ -16,8 +16,8 @@
 
   <div class="card-columns">
     <% @lists.each do |list| %>
-      <div class="card" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : asset_path('default_list_background.jpg') %>)">
-        <div class="card-title"><h3><%= link_to list.name, list_path(list) %></h3></div>
+      <div class="list-card" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : asset_path('default_list_background.jpg') %>)">
+        <div class="card-title"><%= link_to list.name, list_path(list) %></div>
       </div>
     <% end %>
   </div>
