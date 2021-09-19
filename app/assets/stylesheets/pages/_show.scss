@@ -1,5 +1,12 @@
 // Specific CSS for your show-page
 
-.list-title h2 {
-  margin: 16px 0px;
+.remove-bookmark {
+  position: absolute;
+  bottom: 4px;
+  right: 12px;
+}
+.show-page-links {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 16px;
 }
