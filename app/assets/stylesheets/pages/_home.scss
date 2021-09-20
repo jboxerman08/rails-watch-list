@@ -7,6 +7,10 @@ body{
   flex-direction: column;
   margin-top: 75px;
 }
+a {
+  .grow { transition: all .2s ease-in-out; }
+  .grow:hover { transform: scale(1.1); }
+}
 .list-title h2 {
   margin: 12px 0px;
   text-align: center;
